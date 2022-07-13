@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="19.992">
+<testcase classname="SwagLabs E2E Checkout Feature" name="Validation of End to End Checkout and Order Summary" time="9.636">
+<system-out><![CDATA[Given User is on SwagLabs login page........................................passed
+When User enters username as standard_user and password as secret_sauce.....passed
+And User logs in to the application.........................................passed
+Then User is on search results page.........................................passed
+When User navigates to product page for product "Sauce Labs Backpack".......passed
+And User adds product "sauce-labs-backpack" to cart from product page.......passed
+And User navigates back to search results page from product page............passed
+Then User is on search results page.........................................passed
+When User adds product "sauce-labs-bike-light" to cart from search results page.passed
+And User navigates to cart from search results page.........................passed
+Then User Validates 2 products added to cart successfully...................passed
+When User proceeds to checkout and navigates to billing page................passed
+And User enters billing information.........................................passed
+And User navigates to payment summary page..................................passed
+And User validates card used for payment ends with 31337....................passed
+And User navigates to order confirmation page...............................passed
+Then User validates Thank You For Your Order message is displayed...........passed
+And User validates Order Dispatched message is displayed....................passed
+]]></system-out>
+</testcase>
+<testcase classname="SwagLabs Login Feature" name="Validation of Error Message for Invalid User" time="4.708">
+<system-out><![CDATA[Given User is on SwagLabs login page........................................passed
+When User enters username as locked_out_user and password as secret_sauce...passed
+And User logs in to the application.........................................passed
+Then User validates error message displayed is Sorry, this user has been locked out.passed
+]]></system-out>
+</testcase>
+<testcase classname="SwagLabs Login Feature" name="Validation of Error Message for Invalid User 2" time="5.333">
+<system-out><![CDATA[Given User is on SwagLabs login page........................................passed
+When User enters username as invalid_user and password as secret_sauce......passed
+And User logs in to the application.........................................passed
+Then User validates error message displayed is Username and password do not match any user in this service.passed
+]]></system-out>
+</testcase>
+</testsuite>

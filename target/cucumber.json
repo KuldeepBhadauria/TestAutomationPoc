@@ -1,0 +1,576 @@
+[
+  {
+    "line": 6,
+    "elements": [
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1490000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on SwagLabs login page",
+            "match": {
+              "location": "com.poc.test.automation.steps.SwagLabsLogInSteps.launchHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-13T16:17:15.190Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3438000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.poc.test.automation.steps.Hook.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "Validation of End to End Checkout and Order Summary",
+        "description": "",
+        "id": "swaglabs-e2e-checkout-feature;validation-of-end-to-end-checkout-and-order-summary;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 896000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.poc.test.automation.steps.Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 612000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters username as standard_user and password as secret_sauce",
+            "match": {
+              "arguments": [
+                {
+                  "val": "standard_user",
+                  "offset": 24
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 54
+                }
+              ],
+              "location": "com.poc.test.automation.steps.SwagLabsLogInSteps.enterUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 243000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User logs in to the application",
+            "match": {
+              "location": "com.poc.test.automation.steps.SwagLabsLogInSteps.loginToApplication()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 213000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User is on search results page",
+            "match": {
+              "location": "com.poc.test.automation.steps.SwagLabsSearchResultsPageSteps.validateUserOnSearchPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 295000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User navigates to product page for product \"Sauce Labs Backpack\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sauce Labs Backpack",
+                  "offset": 44
+                }
+              ],
+              "location": "com.poc.test.automation.steps.SwagLabsSearchResultsPageSteps.naviagateToProductPage(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 146000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User adds product \"sauce-labs-backpack\" to cart from product page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sauce-labs-backpack",
+                  "offset": 19
+                }
+              ],
+              "location": "com.poc.test.automation.steps.SwagLabsProductPageSteps.addProductToCartFromProductPage(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 203000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User navigates back to search results page from product page",
+            "match": {
+              "location": "com.poc.test.automation.steps.SwagLabsProductPageSteps.navigateToSearchPageFromProductPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 176000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User is on search results page",
+            "match": {
+              "location": "com.poc.test.automation.steps.SwagLabsSearchResultsPageSteps.validateUserOnSearchPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 128000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User adds product \"sauce-labs-bike-light\" to cart from search results page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "sauce-labs-bike-light",
+                  "offset": 19
+                }
+              ],
+              "location": "com.poc.test.automation.steps.SwagLabsSearchResultsPageSteps.addProductToCartFromSearchPage(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 134000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User navigates to cart from search results page",
+            "match": {
+              "location": "com.poc.test.automation.steps.SwagLabsSearchResultsPageSteps.navigateToCartFromSearchPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "User Validates 2 products added to cart successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 15
+                }
+              ],
+              "location": "com.poc.test.automation.steps.SwagLabsShoppingCartPageSteps.validateCountOfProductsInCart(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 99000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User proceeds to checkout and navigates to billing page",
+            "match": {
+              "location": "com.poc.test.automation.steps.SwagLabsShoppingCartPageSteps.navigateToBillingPage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 640000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User enters billing information",
+            "match": {
+              "location": "com.poc.test.automation.steps.SwagLabsBillingAddressPageSteps.enterBillingInformation()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 185000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User navigates to payment summary page",
+            "match": {
+              "location": "com.poc.test.automation.steps.SwagLabsBillingAddressPageSteps.navigateToPaymentInfoPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 73000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User validates card used for payment ends with 31337",
+            "match": {
+              "arguments": [
+                {
+                  "val": "31337",
+                  "offset": 47
+                }
+              ],
+              "location": "com.poc.test.automation.steps.SwagLabsPaymentInformationPageSteps.validateCardInformation(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 151000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "User navigates to order confirmation page",
+            "match": {
+              "location": "com.poc.test.automation.steps.SwagLabsPaymentInformationPageSteps.navigateToOrderConfirmationPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "User validates Thank You For Your Order message is displayed",
+            "match": {
+              "location": "com.poc.test.automation.steps.SwagLabsOrderConfirmationPageSteps.validateThankYouMessage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 51000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "User validates Order Dispatched message is displayed",
+            "match": {
+              "location": "com.poc.test.automation.steps.SwagLabsOrderConfirmationPageSteps.validateOrderDispatchMessage()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SwagLabs"
+          },
+          {
+            "name": "@OrderSummaryValidation"
+          }
+        ]
+      }
+    ],
+    "name": "SwagLabs E2E Checkout Feature",
+    "description": "",
+    "id": "swaglabs-e2e-checkout-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/EndToEndCheckout.feature",
+    "tags": [
+      {
+        "name": "@SwagLabs",
+        "type": "Tag",
+        "location": {
+          "line": 5,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 6,
+    "elements": [
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1101000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on SwagLabs login page",
+            "match": {
+              "location": "com.poc.test.automation.steps.SwagLabsLogInSteps.launchHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-13T16:17:24.842Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1950000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.poc.test.automation.steps.Hook.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Validation of Error Message for Invalid User",
+        "description": "",
+        "id": "swaglabs-login-feature;validation-of-error-message-for-invalid-user;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 979000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.poc.test.automation.steps.Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 465000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters username as locked_out_user and password as secret_sauce",
+            "match": {
+              "arguments": [
+                {
+                  "val": "locked_out_user",
+                  "offset": 24
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 56
+                }
+              ],
+              "location": "com.poc.test.automation.steps.SwagLabsLogInSteps.enterUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 133000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User logs in to the application",
+            "match": {
+              "location": "com.poc.test.automation.steps.SwagLabsLogInSteps.loginToApplication()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User validates error message displayed is Sorry, this user has been locked out",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Sorry, this user has been locked out",
+                  "offset": 42
+                }
+              ],
+              "location": "com.poc.test.automation.steps.SwagLabsLogInSteps.validateLoginErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SwagLabs"
+          },
+          {
+            "name": "@Login"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1432000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User is on SwagLabs login page",
+            "match": {
+              "location": "com.poc.test.automation.steps.SwagLabsLogInSteps.launchHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-07-13T16:17:29.550Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2202000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.poc.test.automation.steps.Hook.setup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Validation of Error Message for Invalid User",
+        "description": "",
+        "id": "swaglabs-login-feature;validation-of-error-message-for-invalid-user;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 894000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.poc.test.automation.steps.Hook.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 609000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User enters username as invalid_user and password as secret_sauce",
+            "match": {
+              "arguments": [
+                {
+                  "val": "invalid_user",
+                  "offset": 24
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 53
+                }
+              ],
+              "location": "com.poc.test.automation.steps.SwagLabsLogInSteps.enterUsernameAndPassword(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 132000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User logs in to the application",
+            "match": {
+              "location": "com.poc.test.automation.steps.SwagLabsLogInSteps.loginToApplication()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User validates error message displayed is Username and password do not match any user in this service",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username and password do not match any user in this service",
+                  "offset": 42
+                }
+              ],
+              "location": "com.poc.test.automation.steps.SwagLabsLogInSteps.validateLoginErrorMessage(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SwagLabs"
+          },
+          {
+            "name": "@Login"
+          }
+        ]
+      }
+    ],
+    "name": "SwagLabs Login Feature",
+    "description": "",
+    "id": "swaglabs-login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Login.feature",
+    "tags": [
+      {
+        "name": "@SwagLabs",
+        "type": "Tag",
+        "location": {
+          "line": 5,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
